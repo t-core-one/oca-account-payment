@@ -11,11 +11,11 @@ class TestAccountPaymentPromissoryNote(TransactionCase):
     def setUp(self):
         super().setUp()
         self.company = self.env.user.company_id
-        self.default_journal_cash = self.env["account.journal"].search(
+        self.journal_id = self.env["account.journal"].search(
             [("company_id", "=", self.company.id), ("type", "=", "cash")], limit=1
         )
-        self.inbound_payment_method_line = (
-            self.default_journal_cash.inbound_payment_method_line_ids[0]
+        self.payment_method = self.env["account.payment.method"].create(
+            {"name": "Test_MTH", "code": "TST", "payment_type": "inbound"}
         )
         self.company = self.env.ref("base.main_company")
         partner = self.env.ref("base.partner_demo")
@@ -46,9 +46,9 @@ class TestAccountPaymentPromissoryNote(TransactionCase):
         payment = self.env["account.payment"].create(
             {
                 "payment_type": "inbound",
-                "payment_method_line_id": self.inbound_payment_method_line.id,
+                "payment_method_id": self.payment_method.id,
                 "amount": 50.00,
-                "journal_id": self.default_journal_cash.id,
+                "journal_id": self.journal_id.id,
             }
         )
         payment.date_due = "2020-09-21"

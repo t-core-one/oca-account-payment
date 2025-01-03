@@ -4,3 +4,7 @@
   * Alexandre Díaz
   * Carlos Roca
   * César A. Sánchez
+
+* `Avanzosc <https://www.avanzosc.es>`_:
+
+  * Unai Beristain
