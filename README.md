@@ -17,7 +17,11 @@ account-payment
 
 [//]: # (addons)
 
-This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[account_payment_promissory_note](account_payment_promissory_note/) | 18.0.1.0.0 |  | Account Payment Promissory Note
 
 [//]: # (end addons)
 

@@ -1,0 +1,11 @@
+[project]
+name = "odoo-addons-oca-account-payment"
+version = "18.0.20250203.0"
+dependencies = [
+    "odoo-addon-account_payment_promissory_note==18.0.*",
+]
+classifiers=[
+    "Programming Language :: Python",
+    "Framework :: Odoo",
+    "Framework :: Odoo :: 18.0",
+]
