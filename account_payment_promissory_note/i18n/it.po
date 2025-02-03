@@ -19,16 +19,11 @@ msgstr ""
 #. module: account_payment_promissory_note
 #: model_terms:ir.ui.view,arch_db:account_payment_promissory_note.view_account_payment_form_multi
 msgid ""
-"<span class=\"text-muted\" attrs=\"{'invisible': [('promissory_note','=', False)]}\">\n"
-"                    Set date due to all payments or empty to select last date due of each partner invoices group\n"
+"<span class=\"text-muted\" invisible=\"not promissory_note\">\n"
+"                    Set date due to all payments or empty to select last "
+"date due of each partner invoices group\n"
 "                </span>"
 msgstr ""
-"<span class=\"text-muted\" attrs=\"{'invisible': [('promissory_note','=', "
-"False)]}\">\n"
-"                    Impostare la data scadenza in tutti i pagamenti o "
-"lasciare vuoto per selezionare l'ultima data scadenza di ogni gruppo fatture "
-"partner\n"
-"                </span>"
 
 #. module: account_payment_promissory_note
 #: model:ir.model.fields,field_description:account_payment_promissory_note.field_account_payment__date_due
@@ -36,6 +31,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:account_payment_promissory_note.field_account_promissory_note_mixin__date_due
 msgid "Due Date"
 msgstr "Scadenza"
+
+#. module: account_payment_promissory_note
+#: model:ir.model,name:account_payment_promissory_note.model_account_payment_register
+msgid "Pay"
+msgstr ""
 
 #. module: account_payment_promissory_note
 #: model:ir.model,name:account_payment_promissory_note.model_account_payment
@@ -55,7 +55,19 @@ msgstr "Nota promissorio"
 msgid "Promissory Note Mixin"
 msgstr "Mixin nota promissorio"
 
-#. module: account_payment_promissory_note
-#: model:ir.model,name:account_payment_promissory_note.model_account_payment_register
-msgid "Register Payment"
-msgstr "Registra pagamento"
+#~ msgid ""
+#~ "<span class=\"text-muted\" attrs=\"{'invisible': [('promissory_note','=', "
+#~ "False)]}\">\n"
+#~ "                    Set date due to all payments or empty to select last "
+#~ "date due of each partner invoices group\n"
+#~ "                </span>"
+#~ msgstr ""
+#~ "<span class=\"text-muted\" attrs=\"{'invisible': [('promissory_note','=', "
+#~ "False)]}\">\n"
+#~ "                    Impostare la data scadenza in tutti i pagamenti o "
+#~ "lasciare vuoto per selezionare l'ultima data scadenza di ogni gruppo "
+#~ "fatture partner\n"
+#~ "                </span>"
+
+#~ msgid "Register Payment"
+#~ msgstr "Registra pagamento"

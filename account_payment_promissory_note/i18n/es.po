@@ -20,18 +20,11 @@ msgstr ""
 #. module: account_payment_promissory_note
 #: model_terms:ir.ui.view,arch_db:account_payment_promissory_note.view_account_payment_form_multi
 msgid ""
-"<span class=\"text-muted\" attrs=\"{'invisible': [('promissory_note','=', "
-"False)]}\">\n"
+"<span class=\"text-muted\" invisible=\"not promissory_note\">\n"
 "                    Set date due to all payments or empty to select last "
 "date due of each partner invoices group\n"
 "                </span>"
 msgstr ""
-"<span class=\"text-muted\" attrs=\"{'invisible': [('promissory_note','=', "
-"False)]}\">\n"
-"                   Selecciona una fecha de vencimiento para todos los pagos "
-"o dejalo vacío para que se seleccione la última fecha de vencimiento para "
-"cada agrupación de facturas de un partner.\n"
-"                </span>"
 
 #. module: account_payment_promissory_note
 #: model:ir.model.fields,field_description:account_payment_promissory_note.field_account_payment__date_due
@@ -39,6 +32,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:account_payment_promissory_note.field_account_promissory_note_mixin__date_due
 msgid "Due Date"
 msgstr "Fecha de Vencimiento"
+
+#. module: account_payment_promissory_note
+#: model:ir.model,name:account_payment_promissory_note.model_account_payment_register
+msgid "Pay"
+msgstr ""
 
 #. module: account_payment_promissory_note
 #: model:ir.model,name:account_payment_promissory_note.model_account_payment
@@ -58,10 +56,22 @@ msgstr "Pagaré"
 msgid "Promissory Note Mixin"
 msgstr "Mezcla de pagarés"
 
-#. module: account_payment_promissory_note
-#: model:ir.model,name:account_payment_promissory_note.model_account_payment_register
-msgid "Register Payment"
-msgstr "Registrar pago"
+#~ msgid ""
+#~ "<span class=\"text-muted\" attrs=\"{'invisible': [('promissory_note','=', "
+#~ "False)]}\">\n"
+#~ "                    Set date due to all payments or empty to select last "
+#~ "date due of each partner invoices group\n"
+#~ "                </span>"
+#~ msgstr ""
+#~ "<span class=\"text-muted\" attrs=\"{'invisible': [('promissory_note','=', "
+#~ "False)]}\">\n"
+#~ "                   Selecciona una fecha de vencimiento para todos los "
+#~ "pagos o dejalo vacío para que se seleccione la última fecha de "
+#~ "vencimiento para cada agrupación de facturas de un partner.\n"
+#~ "                </span>"
+
+#~ msgid "Register Payment"
+#~ msgstr "Registrar pago"
 
 #~ msgid "Display Name"
 #~ msgstr "Mostrar Nombre"
